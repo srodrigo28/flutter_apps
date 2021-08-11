@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-void main() => runApp( MobileApp());
-
 class MobileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Mobile Dashboard",
       home: HomePage(),
     );
@@ -23,9 +22,9 @@ class _HomePageState extends State<HomePage> {
   final Color accentColor = Color(0XFFFA2B0F);
 
   List<ItemModel> items = [
-    ItemModel("Tasks", 12, 1830),
-    ItemModel("Analytics", 4, 883),
-    ItemModel("Works", 2, 326),
+    ItemModel("Entradas", 1, 1830),
+    ItemModel("Saídas", 4, 883),
+    ItemModel("Funcionários", 2, 326),
   ];
 
   @override
